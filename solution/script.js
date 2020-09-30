@@ -44,3 +44,20 @@ document.querySelector('.digital').innerText = `${hour}:${minute}:${second} ${mi
 
 setDigital()
 setInterval(setDigital, 1000)
+
+
+function changeClockType() {
+  let x = document.querySelector('.clock-1');
+  let y = document.querySelector('.clock-2');
+  if (x.style.display == 'block') {
+    x.style.display = 'none'
+  } else {
+    x.style.display = 'block'
+  }
+
+  if (y.style.display == 'none') {
+    y.style.display = 'block'
+  } else {
+    y.style.display = 'none'
+  }
+}
